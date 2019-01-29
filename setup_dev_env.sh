@@ -12,7 +12,12 @@ conda config --add channels conda-forge
 conda create -y -n dev pandas scipy matplotlib basemap netCDF4 xarray 
 source activate dev
 conda install python=2.7.15
- 
+pip install pyscaffold==v2.5.10
+pip install multiprocessing
+pip install pynetcf
+pip install ease-grid
+conda install -c conda-forge nco
+
 # Download and install pycharm:
 #    wget http://download.jetbrains.com/python/pycharm-community-2017.3.4.tar.gz -O pycharm.tar.gz
 #    tar -xzf pycharm.tar.gz
@@ -29,13 +34,6 @@ conda install python=2.7.15
 # Setup the GitHub SSH keys
 #
 # ---------------------------------------------------------------
-
-conda install python=2.7.15
-
-pip install pyscaffold==v2.5.10
-pip install multiprocessing
-pip install pynetcf
-pip install ease-grid
 
 # git clone git@github.com:alexgruber/pytesmo.git
 # cd pytesmo
