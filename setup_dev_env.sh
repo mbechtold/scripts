@@ -16,6 +16,7 @@ pip install pyscaffold==v2.5.10
 pip install multiprocessing
 pip install pynetcf
 pip install ease-grid
+pip install f90nml
 conda install -c conda-forge nco
 
 # Download and install pycharm:
