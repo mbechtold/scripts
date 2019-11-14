@@ -16,7 +16,7 @@ Implementation of PEATCLSM
 Three experiments:
 Exp1: CLSM (SMAP version 4)
 Exp2: PEATCLSM-P (SMAP version 4)
-Exp3: PEATCLSM-T (SMAP version 4)
+Exp3: PEATCLSM-T (SMAP version 4) (3a=Natural (TN) and 3b = Drained (TD))
 
 bcs (“boundary conditions”)
 Exp1: /staging/leuven/stg_00024/l_data/model_param/geos5/bcs/Icarus-NLv2/Icarus-NLv2_EASE_PEATMAP_CLSM/SMAP_EASEv2_M09/
@@ -54,7 +54,8 @@ Postprocessing of CLSM and data assimilation output. All done with python.
 Conda is a package manager for programming languages (miniconda, small version of it, sufficient for us). It seems to be the most convenient that we use the same environment for python. It is activated in a bash shell with:
 source /data/leuven/317/vsc31786/miniconda/bin/activate py3
 
-Pycharm is a python editor (e.g. for debugging etc.). Installation: 
+Pycharm is a python editor (e.g. for debugging etc.). 
+Installation: 
 wget http://download.jetbrains.com/python/pycharm-community-2019.2.4.tar.gz -O pycharm.tar.gz
 tar -xzf pycharm.tar.gz
 rm -f pycharm.tar.gz
@@ -63,6 +64,7 @@ Add bin directory to .bashrc (or .bash_profile):
 export PATH="data/leuven/317/vsc31786/miniconda/bin:$PATH"
 export PYTHONPATH="/data/leuven/324/vsc32460/python:$PYTHONPATH"
 export PATH="/data/leuven/324/vsc32460/pycharm/bin:$PATH"
+
 getting packages from github:
 create a python directory on your data disk and in there run
 git clone ssh://git@github.com/mbechtold/pyldas.git
