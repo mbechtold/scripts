@@ -1,8 +1,9 @@
+# # needs updates, compare with https://github.com/alexgruber/scripts/blob/master/python/setup.sh
 # ---------------------------------------------------------------
 # Eventual prerequisits:
 #
 # Download and install miniconda
-
+# 
 wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh
 bash miniconda.sh -b -p /data/leuven/317/vsc31786/miniconda
 rm -f miniconda.sh
