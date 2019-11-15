@@ -76,3 +76,16 @@ used e.g. for bin2netcdf, …
 
 bat_pyldas:
 batchscripts, some modified pyldas functions for peatland projects
+
+
+
+
+------------------
+## temporary
+ToDos:
+- Black list --> mastertable
+- Run Indonesia with cascade
+- include more variables (P, PAR, T, ...) in output collection
+- stress function of Nothern peatlands used (disable 
+
+
