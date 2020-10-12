@@ -1,0 +1,38 @@
+
+# --------------------------------------------------------------------------------------------------------
+# !!! ON THE HPC, MINICONDA SHOULD BE INSTALLED ON $VSC_DATA DUE TO LIMITED SPACE ON $HOME !!!
+# --------------------------------------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------------------------
+# Download and install miniconda:
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+bash miniconda.sh -b -p $VSC_DATA/miniconda
+rm -f miniconda.sh
+
+# Add bin directory to .bashrc (or .bash_profile):
+export PATH="$VSC_DATA/miniconda/bin:$PATH"
+
+# Add the conda-forge channel for package downloads:
+conda config --add channels conda-forge
+
+# Press y when asked, compilation takes few minutes
+conda create -n julia-env -c conda-forge julia
+
+# Activate julia-env
+source activate $VSC_DATA/miniconda/julia-env
+
+# Enter julia
+julia
+
+# Enter package mananger
+]
+
+# install packages
+add ArgParse Statistics Glob JSON Dates Printf
+
+# exit package manager with Ctrl-c
+
+# in julia you should be able to import these packages now
+import ArgParse
+
+
