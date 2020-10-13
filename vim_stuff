@@ -1,0 +1,2 @@
+# for each line globally: replace all characters coming after first occurrence of /
+:%s/\/[^>]*-//g 
